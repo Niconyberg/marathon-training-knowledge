@@ -1,0 +1,341 @@
+# Contributing to Marathon Training Knowledge Base
+
+Thank you for contributing to the running community! This guide will help you make your first contribution.
+
+## Ways to Contribute
+
+- 📝 Write new articles
+- ✏️ Improve existing articles
+- 🐛 Fix typos or errors
+- 📚 Create new categories
+- 💡 Suggest improvements
+- 🔗 Add missing links
+
+## Quick Start
+
+### 1. Fork the Repository
+
+Click the "Fork" button at the top right of this page.
+
+### 2. Clone Your Fork
+
+```bash
+git clone https://github.com/YOUR-USERNAME/marathon-training-knowledge.git
+cd marathon-training-knowledge
+```
+
+### 3. Create a Branch
+
+```bash
+git checkout -b add-tempo-run-article
+```
+
+### 4. Make Your Changes
+
+Add or edit markdown files following our format (see below).
+
+### 5. Commit and Push
+
+```bash
+git add .
+git commit -m "Add tempo run training guide"
+git push origin add-tempo-run-article
+```
+
+### 6. Create a Pull Request
+
+Go to your fork on GitHub and click "New Pull Request."
+
+## Adding a New Article
+
+### Step 1: Choose a Category
+
+Navigate to the appropriate category folder:
+- `training-fundamentals/`
+- `running-workouts/`
+- `training-phases/`
+- `common-mistakes/`
+- `supporting-training/`
+- `recovery-adaptation/`
+- `injury-prevention/`
+
+### Step 2: Create a Markdown File
+
+Create a new file with a descriptive slug: `your-article-title.md`
+
+**Good slugs:**
+- `tempo-run-guide.md`
+- `hip-flexor-exercises.md`
+- `race-day-nutrition.md`
+
+**Bad slugs:**
+- `article1.md`
+- `new-thing.md`
+
+### Step 3: Add Frontmatter
+
+Start your article with YAML frontmatter:
+
+```markdown
+---
+title: "How to Run a Proper Tempo Run"
+summary: "Learn the purpose, execution, and common mistakes of tempo runs for marathon training."
+publishedAt: "2025-01-15"
+updatedAt: "2025-01-15"
+tags:
+  - tempo_run
+  - threshold_training
+  - pacing
+phases:
+  - build
+  - peak
+adaptations:
+  - stamina
+  - lactate_threshold
+audienceLevel:
+  - intermediate
+  - advanced
+topics:
+  - physiology
+  - pacing
+readTime: 10
+author: "Your Name"
+---
+```
+
+### Step 4: Write Your Content
+
+Use clear markdown formatting:
+
+```markdown
+# Article Title
+
+Brief introduction paragraph.
+
+## What is a Tempo Run?
+
+Your content here...
+
+### Key Points
+- Point 1
+- Point 2
+
+## How to Execute
+
+Step-by-step instructions...
+
+## Common Mistakes
+
+❌ **Running too hard**
+The problem and solution...
+
+✅ **The right approach**
+
+## Key Takeaways
+
+- Summary point 1
+- Summary point 2
+
+---
+
+**Related Articles:**
+- [Link to related article](/category/article-slug)
+```
+
+## Creating a New Category
+
+Want to add a category like "Nutrition & Hydration" or "Mental Training"?
+
+### Step 1: Create a Folder
+
+```bash
+mkdir nutrition-hydration
+```
+
+Use lowercase with hyphens (not spaces or underscores).
+
+### Step 2: Add Category Metadata
+
+Create `_category.json`:
+
+```json
+{
+  "title": "Nutrition & Hydration",
+  "description": "Fuel your training with proper nutrition and hydration strategies for optimal performance and recovery.",
+  "order": 8
+}
+```
+
+**Order field:** Determines display order (1-7 are taken, use 8+)
+
+### Step 3: Add Your First Article
+
+Create at least one article in the new category following the article format above.
+
+### Step 4: Submit Pull Request
+
+Explain why this category is needed and how it complements existing content.
+
+## Content Guidelines
+
+### ✅ DO
+
+**Research-Based**
+- Cite scientific studies when possible
+- Reference established training principles
+- Use reputable sources (peer-reviewed research, certified coaches, medical professionals)
+
+**Clear & Accessible**
+- Write for a general audience
+- Explain technical terms
+- Use short paragraphs (2-4 sentences)
+- Include practical examples
+
+**Practical & Actionable**
+- Provide specific guidance
+- Include "how-to" steps
+- Address common questions
+- Link to related content
+
+**Community-Minded**
+- Consider all experience levels
+- Be inclusive and encouraging
+- Acknowledge different approaches
+- Avoid absolute statements ("always," "never") unless backed by strong evidence
+
+### ❌ DON'T
+
+**Medical Claims**
+- Don't diagnose injuries or conditions
+- Don't prescribe treatments
+- Always include "consult a doctor" disclaimers for injury/health topics
+
+**Product Promotion**
+- Don't promote specific brands
+- Don't include affiliate links
+- General categories are okay ("stability shoes," not "Nike Pegasus")
+
+**Unsubstantiated Claims**
+- Avoid fitness myths without debunking them
+- Don't make claims without evidence
+- Be clear about opinions vs. facts
+
+**Copy/Paste Content**
+- Don't plagiarize from other sources
+- Always write in your own words
+- If quoting, use proper attribution
+
+## Writing Style
+
+### Tone
+- Professional but conversational
+- Encouraging and supportive
+- Evidence-based but not overly academic
+- Direct and practical
+
+### Structure
+1. **Introduction** - Hook and context
+2. **Main Content** - Core information with subheadings
+3. **Common Mistakes** - Pitfalls to avoid
+4. **Key Takeaways** - Bulleted summary
+5. **Related Articles** - Links to related content
+
+### Examples
+
+**Good:**
+> "Easy runs should be run at a conversational pace—slow enough that you could hold a full conversation without gasping for air. This typically means 60-90 seconds slower than your goal marathon pace."
+
+**Bad:**
+> "Easy runs are important. You should run them easy."
+
+### Formatting
+
+- Use `##` for main sections
+- Use `###` for subsections
+- Use `**bold**` for emphasis
+- Use lists for multiple points
+- Use `>` blockquotes for key concepts
+- Use code blocks for sample workouts
+
+## Tags Reference
+
+### Workout Types
+`easy_run`, `tempo_run`, `long_run`, `interval_training`, `hill_repeats`, `recovery_run`, `progression_run`, `fartlek`, `track_workout`, `race_pace`
+
+### Training Phases
+`base`, `build`, `peak`, `taper`
+
+### Adaptations
+`aerobic_base`, `stamina`, `speed`, `endurance`, `recovery`, `lactate_threshold`, `vo2max`, `strength`, `mobility`
+
+### Audience Levels
+`beginner`, `intermediate`, `advanced`
+
+### Topics
+`physiology`, `nutrition`, `pacing`, `psychology`, `recovery`, `training_structure`, `biomechanics`, `injury_prevention`, `equipment`, `race_strategy`
+
+## Review Process
+
+### What We Check
+
+1. **Accuracy** - Is the information correct and evidence-based?
+2. **Clarity** - Is it easy to understand?
+3. **Completeness** - Does it answer the key questions?
+4. **Formatting** - Does it follow the style guide?
+5. **Links** - Do internal links work?
+
+### Response Time
+
+We aim to review pull requests within 7 days. Complex additions (new categories) may take longer.
+
+### Feedback
+
+We may request changes before merging:
+- Clarifications
+- Additional citations
+- Formatting fixes
+- Content reorganization
+
+Don't be discouraged! Feedback helps us maintain quality.
+
+## Getting Help
+
+### Questions About Contributing?
+
+- Open an [issue](https://github.com/Niconyberg/marathon-training-knowledge/issues) with the "question" label
+- Email: hello@1stmarathon.com
+
+### Not Sure What to Write?
+
+Check the [issues page](https://github.com/Niconyberg/marathon-training-knowledge/issues) for:
+- Requested articles
+- Content gaps
+- Improvement opportunities
+
+## Recognition
+
+All contributors are recognized! Your contributions help thousands of runners train smarter and safer.
+
+## Code of Conduct
+
+### Be Respectful
+- Assume good intentions
+- Provide constructive feedback
+- Respect different perspectives
+- Be patient with new contributors
+
+### Be Professional
+- Keep discussions focused on content
+- Avoid personal attacks
+- No spam or self-promotion
+- Follow GitHub's Community Guidelines
+
+## License
+
+By contributing, you agree to license your contributions under the MIT License. This means your content can be freely used, modified, and distributed with attribution.
+
+---
+
+**Thank you for contributing to the running community!** 🏃‍♀️🏃‍♂️
+
+Questions? Open an issue or email hello@1stmarathon.com
